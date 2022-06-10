@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+</head>
+<body>
+
+  <div class="header">
+    <div class="title">
+      <p>My balance</p>
+      <h2>$921.48</h2>
+    </div>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logotipo">
+    </div>
+  </div>
+
+  <div class="spent">
+    <p>Spending - Last 7 days</p>
+    <div class="graphics">
+      <canvas id="myChart" class="chart" style="width:100%;max-width:700px"></canvas>
+    </div>
+    <div class="stats">
+      <div class="actualMonth">
+        <p>Total this month</p>
+        <h2 id="sumAmount"></h2>
+      </div>
+      <div class="lastMonth">
+        <h3>+2.4%</h3>
+        <p>from last month</p>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
